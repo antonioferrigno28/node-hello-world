@@ -13,5 +13,7 @@
 // Buon lavoro!
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//eseguo in console con node (nomefile): In questo caso node index.js
-console.log("Hello World");
+
+const arguments = process.argv.slice(2);
+const word = arguments[0] || "world";
+console.log(`Hello ${word}`);
